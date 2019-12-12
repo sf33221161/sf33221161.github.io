@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        width: 100%;
+        height: 33px;
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        top: 60px;
+
+        justify-content: space-evenly;
+        /* padding: 10px 0 0 0 ; */
+        z-index: 88;
+
+    }
+
+    .man {
+        margin: auto;
+        width: 60%;
+        z-index: 5;
+
+
+    }
+
+    .word {
+        color: rgb(255, 255, 255);
+        font-family: 'Righteous', cursive;
+        font-size: 30px;
+    }
+
+    .box {
+        width: 60%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, #ff5959 0%, #000000 80%);
+        margin: auto;
+        display: flex;
+
+        justify-content: center;
+        align-content: center;
+        /* z-index: 14; */
+    }
+
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #fw {
+        text-align: center;
+    }
+
+    .wordbox {
+        /* height: 50vh; */
+        width: 100%;
+        font-size: 200PX;
+        position: absolute;
+        top: 11%;
+        /* z-index: -1; */
+        /* display: flex; */
+        text-align: center;
+
+    }
+
+    #born {
+        width: 80%;
+    }
+
+    #arrt {
+        width: 80%;
+    }
+
+    #ntpc {
+        width: 45%;
+    }
+
+    .inword {
+        color: white;
+
+    }
+
+    #bounce {
+        width: 8%;
+        /* display: flex; */
+        /* margin: auto; */
+        position: absolute;
+        /* top: 30%; */
+        bottom: 40%;
+        left: 15%;
+        z-index: 2;
+
+    }
+
+
+
+    .logo {
+        width: 100px;
+        position: relative;
+        top: -30px;
+
+    }
+
+    #logo {
+        width: 100%;
+    }
+</style>
+
+
+
+<body>
+
+
+    <img id="bounce" src="bounce.png" alt="">
+
+
+    <div class="nav">
+
+        <div class="logo">
+            <a href="./index.html"><img id="logo" src="logo.png" alt=""></a>
+        </div>
+
+        <a id="a" class="word" href="./about.html">ABOUT</a>
+        <div id="b" class="word">GROW</div>
+        <div id="c" class="word">PROJECT</div>
+        <div id="d" class="word">.FEAT</div>
+        <div id="e" class="word">SHOW</div>
+    </div>
+
+
+    <div class="box">
+
+        <img class="man" src="man.png" alt="">
+    </div>
+    <div class="wordbox">
+        <img id="born" src="BORN.png" alt="">
+        <img id="ntpc" src="NTPC.png" alt="">
+        <img id="arrt" src="ARRT.png" alt="">
+
+    </div>
+
+    <div id="scene1" class="scene_head">
+        <div data-depth="0.4" class="bg-img" style="background-image: url('./BORN.png');"></div>
+        <div data-depth="0.6" class="bg-img" style="background-image: url('./man.png');">
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <div id="fw" class="word">BOOUNCE©</div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

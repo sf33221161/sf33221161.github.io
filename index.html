@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- [if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif] -->
 </head>
+<style>
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        width: 100%;
+        height: 33px;
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        top: 60px;
+        z-index: 5;
+
+
+        justify-content: space-evenly;
+        /* padding: 10px 0 0 0 ; */
+
+    }
+
+    .word {
+        color: rgb(255, 255, 255);
+        font-family: 'Righteous', cursive;
+        font-size: 30px;
+
+
+    }
+
+
+
+    .movie {
+
+        object-fit: cover;
+        width: 100%;
+        height: calc(100% - 4vh);
+        z-index: 4;
+
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+
+    }
+
+    #fw {
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+        position: relative;
+        top: -30px;
+
+    }
+
+    #logo {
+        width: 100%;
+    }
+    
+</style>
+
+
 <body>
-    123
+
+
+
+
+    <div class="nav">
+            <div class="logo">
+                    <a href="./index.html"><img id="logo" src="logo.png" alt=""></a>
+                </div>
+
+        <a id="a" class="word" href="./about.html">ABOUT</a>
+        <div id="b" class="word">GROW</div>
+        <div id="c" class="word">PROJECT</div>
+        <div id="d" class="word">.FEAT</div>
+        <div id="e" class="word">SHOW</div>
+
+    </div>
+
+
+    <video class="movie" loop autoplay>
+        <source src="vid1.mp4" type="video/mp4" />
+
+
+
+    </video>
+
+
+
+    <footer>
+        <div class="footer">
+            <div id="fw" class="word">BOUNCE©</div>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
